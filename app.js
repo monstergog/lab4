@@ -8,8 +8,9 @@ var http = require('http');
 var path = require('path');
 var handlebars = require('express3-handlebars')
 
+var hello = require('./routes/');
 var index = require('./routes/index');
-var hello = require('./routes/hello');
+var project = require('./routes/project');
 // Example route
 // var user = require('./routes/user');
 
@@ -37,7 +38,7 @@ if ('development' == app.get('env')) {
 
 // Add routes here
 app.get('/', index.view);
-app.get('/hello/:userName', hello.view);
+app.get('/project/:name', project.viewProject);
 // Example route
 // app.get('/users', user.list);
 
