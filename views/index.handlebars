@@ -23,22 +23,28 @@
 		<!-- h1 through h6 are headers. The higher the number, the smaller the header -->
 		<!-- p means paragraph -->
 		<div class="jumbotron">
-			<h1>Michael Bernstein</h1>
-			<p>human-computer interaction &middot; social computing &middot; crowdsourcing</p>
+			<h1>Alex Nguyen</h1>
+			<p >Major: Cogntive Science - Design and Interaction</p>
+			<h4><p style="line-height:1.8; color:black;"> I don't have any particular interests in specific
+			fields of programming, I'm just looking for something stable
+			and not necessarily an enormous pay check, such as a government
+			job (or maybe something with gaming because it's how I spent
+			time with friends), but would happily work just about anywhere
+			as long as my skills are needed.</p></h4>
 		</div>
 		
 		<ol>
 			{{#each projects}}
-			  <li><a href="#{{id}}">{{name}}</a></li>
+			  <h4><li><a href="#{{id}}">{{name}}</a></li></h4>
 			{{/each}}
 		</ol>
 
-		<h4>Projects</h4>
+		<h2>Projects</h2>
 		{{#each projects}}
 			<div class="project" id="{{id}}">
 				<a href="project/{{name}}" class="thumbnail">
 					<img src="images/{{image}}" class="img">
-					<p>{{name}}</p>
+					<b><p>{{name}}</p></b>
 				</a>
 			</div>
 		{{/each}}
