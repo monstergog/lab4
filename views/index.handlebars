@@ -18,7 +18,7 @@
     <![endif]-->        
 </head>
 
-<body>
+<body style="background-color:">
 	<div class="container">
 		<!-- h1 through h6 are headers. The higher the number, the smaller the header -->
 		<!-- p means paragraph -->
@@ -39,21 +39,31 @@
 			{{/each}}
 		</ol>
 
-		<h2>My Projects</h2>
-		{{#each projects}}
-			<h3>Buy Buddy</h3>
-			<p>A rudimentary budgeting app which allows users to
-			track their expenditures and find where they can cut back on
-			unnecessary purchases when they are looking to save money</p>
-			<div class="project" id="{{id}}">
-				<a href="https://a10-buy-buddy.herokuapp.com/" class="thumbnail">
-					<img src="images/{{image}}" class="img">
-					<b><p>{{name}}</p></b>
-				</a>
-			</div>
-		{{/each}}
-	</div>
-	
+		<h2>My Skills and Work</h2>
+		
+		<h3>Programming</h3>
+		<blockquote><h3>Buy Buddy App</h3>
+		<p>A rudimentary budgeting app which allows users to
+		track their expenditures and find where they can cut back on
+		unnecessary purchases when they are looking to save money.</p>
+		<div class="project" >
+			<a href="https://a10-buy-buddy.herokuapp.com/" class="thumbnail">
+				<img src="images/BuyBuddy.png" class="img">
+				<b><p>Buy Buddy</p></b>
+			</a>
+		</div>
+		</blockquote>
+		
+		<h3>Graphic Design</h3>
+		<blockquote><h3>Chemeon Brochure</h3>
+		<p>Hired to do contract graphic design for Chemeon for their
+		job fair brochure.</p>
+		<a href="images/CHEMEON-Outter.png" class="thumbnail" style="max-width:45%; max-height:auto; display:inline-block;">
+			<img style="width:95%; height:auto;" src="images/CHEMEON-Outter.png">
+		
+		<a href="images/CHEMEON-Inner.png" class="thumbnail" style="max-width:45%; max-height:auto; display:inline-block;">
+			<img style="width:95%; height:auto;" src="images/CHEMEON-Inner.png" class="img">
+
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
 </body>
